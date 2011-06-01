@@ -13,11 +13,11 @@ Gem::Specification.new do |s|
   s.description = %q{It pulls in the ?ref= and ?sr= type references from urls and marks visitor comings from those urls.}
   s.email = %q{rtdp@weboniselab.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.rdoc"
   ]
   s.files = [
     "MIT-LICENSE",
-    "README",
+    "README.rdoc",
     "Rakefile",
     "init.rb",
     "install.rb",
