@@ -8,11 +8,11 @@ Example
 
 In referrer_tracker.yml file in cofig directory -
 
-track1:
-  actions: "home#index home#dashboard"  #These actions will be tracked - with first as landingpage and second as dashboard page.
-  conversion: true #if set to true, this will track the conversions.
-  conversion_rate: true #if set to true, this will also save landingpage hits, based on which conversion_rate can be calculated.
-  referreral_parameter: sr # on successfull converstion it will credit ?sr= parameter as source. If left null, credit will be given to url, the user came from.
+   track1:
+     actions: "home#index home#dashboard"  #These actions will be tracked - with first as landingpage and second as dashboard page.
+     conversion: true #if set to true, this will track the conversions.
+     conversion_rate: true #if set to true, this will also save landingpage hits, based on which conversion_rate can be calculated.
+     referreral_parameter: sr # on successfull converstion it will credit ?sr= parameter as source. If left null, credit will be given to url, the user came from.
 
 Installation
 =============
