@@ -16,8 +16,11 @@ In referrer_tracker.yml file in cofig directory -
 
 Installation
 =============
+Install the gem as - 
 
-First run the migrations using - 
+   gem install referrer_tracker
+
+Then run the migrations using - 
 
     rake db:migrate:rt_setup
 
