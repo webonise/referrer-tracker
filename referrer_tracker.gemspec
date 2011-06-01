@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rtdp"]
   s.date = %q{2011-06-01}
-  s.description = %q{TODO: It pulls in the ?ref= and ?sr= type references from urls and marks visitor comings from those urls.}
+  s.description = %q{It pulls in the ?ref= and ?sr= type references from urls and marks visitor comings from those urls.}
   s.email = %q{rtdp@weboniselab.com}
   s.extra_rdoc_files = [
     "README"
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   ]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: Tracks the urls references.}
+  s.summary = %q{Tracks the urls references.}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
