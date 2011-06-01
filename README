@@ -9,11 +9,21 @@ Example
 In referrer_tracker.yml file in cofig directory -
 
 track1:
-  start_action: "home", "index" #This will set landingpage.
-  end_action: "user", "create" #This will be action of successfull conversion. user signup in this case.
+  actions: "home#index home#dashboard"  #These actions will be tracked - with first as landingpage and second as dashboard page.
   conversion: true #if set to true, this will track the conversions.
   conversion_rate: true #if set to true, this will also save landingpage hits, based on which conversion_rate can be calculated.
   referreral_parameter: sr # on successfull converstion it will credit ?sr= parameter as source. If left null, credit will be given to url, the user came from.
+
+Installation
+=============
+
+First run the migrations using - 
+
+    rake db:migrate:rt_setup
+
+This way, it will create a table in your database named - referrer_track.
+
+Then add a referrer_tracker.yml file inside the config directory and add the configuration as shown in above example.
 
 
 
