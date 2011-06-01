@@ -1,5 +1,6 @@
 # Include hook code here
 require File.join(File.dirname(__FILE__), "lib", "referrer_tracker")
+require File.join(File.dirname(__FILE__), "lib", "referrer_tracker", "utils")
 
 #
 #load the configutraions from yml
