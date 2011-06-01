@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
     "MIT-LICENSE",
     "README",
     "Rakefile",
-    "VERSION",
     "init.rb",
     "install.rb",
     "lib/app/models/track.rb",
