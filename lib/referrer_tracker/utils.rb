@@ -27,7 +27,7 @@ module ReferrerTracker::Utils
 
 
   # checks value for conversion rate
-  def conversion_rate
+  def conversion_rate?
     get_yml_attributes("conversion_rate").first
   end
 
@@ -48,7 +48,6 @@ module ReferrerTracker::Utils
         result = k
       end
     end
-    logger.info(result + "===============+++++===++++==+++=====")
     result
   end
 
@@ -89,6 +88,15 @@ module ReferrerTracker::Utils
   # Give Attributes from yml file
   def get_yml_attributes(action)
     ReferrerTracker::Utils.conf.values.map{|i| i["#{action}"]}
+  end
+
+
+  #
+  # This is to check if current referrer key is the one defined in configs.
+  #
+  #
+  def source_match?
+      params[current_source_key.to_sym].present?
   end
 
 end

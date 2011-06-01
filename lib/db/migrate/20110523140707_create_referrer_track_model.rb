@@ -1,6 +1,6 @@
-class CreateTrackModel < ActiveRecord::Migration
+class CreateReferrerTrackModel < ActiveRecord::Migration
   def self.up
-    create_table :tracks do |t|
+    create_table :referrer_tracks do |t|
       t.string :source
       t.string :track
       t.integer :step

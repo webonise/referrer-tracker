@@ -1,2 +1,3 @@
-class Track < ActiveRecord::Base
+class ReferrerTrack < ActiveRecord::Base
+
 end
