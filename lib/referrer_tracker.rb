@@ -3,8 +3,11 @@ class ActionController::Base
   before_filter :notice_referrer
 end
 
+require 'referrer_tracker/utils'
+require 'app/models/referrer_tracker/referrer_track'
+
 module ReferrerTracker
-  include Utils
+  include ReferrerTracker::Utils
 
   #
   # This is being called by basic before filter and used to check if conditions from config satisfies..
@@ -41,5 +44,3 @@ module ReferrerTracker
   end
 
 end
-
-require 'referrer_tracker/utils'

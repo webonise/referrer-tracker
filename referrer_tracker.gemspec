@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "init.rb",
     "install.rb",
-    "lib/app/models/track.rb",
+    "lib/app/models/referrer_track.rb",
     "lib/db/migrate/20110523140707_create_referrer_track_model.rb",
     "lib/db/schema.rb",
     "lib/referrer_tracker.rb",

@@ -81,6 +81,6 @@ end
 
 
 #Load the model files.
-path = File.join(File.dirname(__FILE__), 'app', "models", "track.rb")
+path = File.join(File.dirname(__FILE__), 'app', "models", "referrer_track.rb")
 $LOAD_PATH << path
 ActiveSupport::Dependencies.load_file(path)
